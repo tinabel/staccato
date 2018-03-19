@@ -55,11 +55,27 @@ a:hover {
     box-sizing: border-box;
     grid-column: 5 / span 7;
     grid-row: 2 / span 2;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .post {
     margin: 1rem auto 2rem auto;
+}
+
+.post:first-child {
+    margin-top: .7rem;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.post-meta {
+    margin: 0;
+}
+
+.post p {
+    margin-bottom: 0;
 }
 
 .post-end {
@@ -69,18 +85,51 @@ a:hover {
     text-align: center;
 }
 
+.comment-form-comment {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.comment-form-comment label[for="comment"]{
+    align-self: flex-start;
+    clear: both;
+    flex-grow: 1;
+}
+
+#comment {
+    clear: both;
+    align-self: flex-end;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    flex: column nowrap;
+    justify-content: center;
+}
+
+.next {
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.previous {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
 .sidebar {
     box-sizing: border-box;
     grid-column: 1 / span 4;
     grid-row: 3 / span 2;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .footer {
     box-sizing: border-box;
     grid-column: 1 / span 12;
     grid-row: 5;
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -88,14 +137,27 @@ a:hover {
     box-sizing: border-box;
     grid-column: 1 / span 4;
     grid-row: 2;
-    padding: 1rem;
+    padding: 0 1rem;
+}
+
+.masthead h1 {
+    margin: 0;
+}
+
+.masthead .description {
+    margin:0;
 }
 
 .site-navigation {
     background-color: #ccc;
-    border-bottom: #666 solid 1rem;
+    border-bottom: #ddd solid 1rem;
     grid-column: 1 / span 12;
     grid-row: 1;
+}
+
+.site-navigation a,
+.site-navigation a:hover {
+    color: #333;
 }
 
 .site-navigation ul {
